@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "League Spartan", sans-serif;
+}
+body{
+width: 100vw;
+height: 100vh;
+background-color: hsl(222, 26%, 31%);
+}
+main{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+.display{
+    width: 30%;
+    height: 130px;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.display h1{
+    color: white;
+    font-size: 40px;
+}
+.keys{
+    width: 30%;
+    height: auto;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.key{
+width: 80px;
+height: 50px;
+background-color: hsl(0, 0%, 90%);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+font-weight: bold;
+color: hsl(221, 14%, 31%);
+box-shadow: 0px 5px 0px 0px hsl(28, 16%, 65%);
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 20px;
+}
+.buttons button{
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.deleteBtn , .resetBtn{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0 5px 0 0 hsl(224, 28%, 35%);
+}
+.resultBtn{
+    background-color: hsl(6, 70%, 34%);
+}
+.error{
+color: red !important;
+font-size: 20px !important;
+}
+.header{
+    width: 30%;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.theme-switch{
+    width: 80px;
+    /* height: 35px; */
+    /* border-radius: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.numbers{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+.switch{
+    width: 100%;
+    height: 35px;
+    background: hsl(224, 36%, 15%);
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+@media (max-width : 1075px) {
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    main{
+        width: 100%;
+        height: auto;
+    }
+    .keys{
+        width: 60%;
+
+    }
+    .display{
+        width: 60%;
+    }
+    .header{
+        width: 60%;
+    }
+}
+
+@media (max-width : 375px) {
+    main{
+        height: 100vh;
+    }
+    .keys{
+        width: 90%;
+    }
+    .display{
+        width: 90%;
+    }
+    .key{
+        width: 50px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .buttons button{
+        padding: 10px;
+        gap: 10px;
+    }
+    .header{
+        width: 90%;
+    }
+}
